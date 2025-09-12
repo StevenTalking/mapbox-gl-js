@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>D3 + Mapbox Example</title>
+
+  <!-- Mapbox GL JS CSS -->
+  <link
+    href="https://api.mapbox.com/mapbox-gl-js/v2.13.0/mapbox-gl.css"
+    rel="stylesheet"
+  />
+
+  <style>
+    body, html {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      width: 100%;
+    }
+    #map {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      width: 100%;
+    }
+    /* Optional: style d3 overlay circles */
+    svg circle {
+      stroke: white;
+      stroke-width: 1px;
+    }
+  </style>
+</head>
+<body>
+  <div id="map"></div>
+
+  <!-- Mapbox + D3 scripts (if not bundling with Vite/Webpack) -->
+  <script src="https://api.mapbox.com/mapbox-gl-js/v2.13.0/mapbox-gl.js"></script>
+  <script src="https://d3js.org/d3.v7.min.js"></script>
+
+  <!-- Your compiled TypeScript will go here -->
+  <!-- Example if compiled to dist/d3-mapbox-example.js -->
+  <script src="./d3-mapbox-example.js" type="module"></script>
+</body>
+</html>
